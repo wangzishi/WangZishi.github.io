@@ -1,0 +1,370 @@
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/fontawesome-webfont.eot?v=4.6.3);
+    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.6.3) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.6.3) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.6.3) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular) format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+* {
+    box-sizing: border-box;
+}
+
+strong {
+    color: teal;
+}
+
+body {
+    background-color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, Neue Haas Grotesk Text Pro, Arial Nova, Segoe UI, Helvetica Neue, ".PingFang SC", PingFang SC, Microsoft YaHei, Microsoft JhengHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, Hiragino Sans GB, sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, .2);
+    width: 1030px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-title,
+.section-title-wrapper,
+.timeline-title,
+.timeline-wrapper,
+address,
+header {
+    overflow-y: hidden;
+}
+
+header,
+.content {
+    padding: 30px 45px;
+}
+
+header {
+    background-color: #4a5459;
+    color: #ffffff;
+}
+
+.header-avatar {
+    float: left;
+    margin: 0px 40px 0px 0px;
+}
+
+.header-avatar>img {
+    width: 144px;
+    height: 144px;
+}
+
+section {
+    display: inline-block;
+}
+
+article.column section {
+    width: 100%;
+}
+
+section>h1,
+section>h2 {
+    line-height: 1;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+.name {
+    font-size: 72px;
+}
+
+.job {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+address {
+    float: right;
+}
+
+.contact {
+    text-align: right;
+}
+
+.contact li {
+    list-style-type: none;
+    font-style: normal;
+    line-height: 1.4;
+    font-size: 19px;
+    padding-right: 32px;
+}
+
+.contact li::after {
+    display: inline-block;
+    font-family: FontAwesome;
+    padding-left: 10px;
+    margin-right: -32px;
+}
+
+.contact-wechat::after {
+    content: "\f1d7";
+}
+
+.contact-email::after {
+    content: "\f0e0";
+}
+
+.contact-mobile::after {
+    content: "\f095";
+}
+
+.contact-github::after {
+    content: "\f092";
+}
+
+.row {
+    overflow: hidden;
+}
+
+.column {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.column-6 {
+    width: 50%;
+}
+
+.left {
+    padding-left: 0px;
+}
+
+.right {
+    padding-right: 0px;
+}
+
+.section-title-wrapper::before {
+    font-family: FontAwesome;
+    font-size: 26px;
+    float: left;
+    padding: 6px;
+    text-align: center;
+    text-rendering: auto;
+    background-color: #4a5459;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100%;
+}
+
+.skills .section-title-wrapper::before {
+    content: "\f0ad";
+}
+
+.education .section-title-wrapper::before {
+    content: "\f02d";
+}
+
+.language .section-title-wrapper::before {
+    content: "\f0ac";
+}
+
+.experience .section-title-wrapper::before {
+    content: "\f0c3";
+}
+
+.section-title {
+    float: left;
+    padding: 0px;
+    margin: 0 0 0 10px;
+}
+
+.section-title-ch {
+    font-size: 18px;
+    float: left;
+    font-weight: 700;
+}
+
+.section-title-en {
+    font-size: 14px;
+    float: left;
+    clear: left;
+    color: teal;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+dl,
+ol,
+ul {
+    line-height: 1.5;
+}
+
+.timeline-wrapper::after {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    transform: translate(0, 0);
+    background-color: #4a5459;
+    color: #ffffff;
+    border-radius: 100%;
+    float: left;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    text-align: center;
+    line-height: 14px;
+    font-size: 14px;
+    content: "";
+    margin-left: 17px;
+    margin-top: -7px;
+}
+
+.timeline {
+    padding-top: 42px;
+    padding-left: 26px;
+    border-left: 4px solid #4a5459;
+    margin: -27px 0 0 22px;
+}
+
+.timeline-title {
+    margin: 0 0 0 -26px;
+    padding: 0px 10px 3px 26px;
+    color: #fff;
+    background-color: #4a5459;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.33;
+}
+
+.timeline-item {
+    padding-bottom: 14px;
+}
+
+.timeline-item::before {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    background-color: teal;
+    color: #fff;
+    border-radius: 100%;
+    float: left;
+    width: 26px;
+    height: 26px;
+    padding: 6px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    margin-left: -47px;
+    margin-top: -6px;
+    position: absolute;
+}
+
+.skills-frontend::before {
+    content: "\f1fe";
+}
+
+.skills-backend::before {
+    content: "\f085";
+}
+
+.skills-miscellaneous::before {
+    content: "\f0c2";
+}
+
+.experience-project,
+.experience-position,
+.experience-project-name,
+.skills-item-summary {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: 700;
+}
+
+.language-item-description::before,
+.skills-item-description::before {
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    transform: translate(0, 0);
+    content: "\f005";
+    width: 28px;
+    margin-left: -28px;
+    display: inline-block;
+}
+
+.education-undergraduate::before {
+    content: "\f02e";
+}
+
+.education-name {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+.education-honor,
+.education-major {
+    list-style-type: none;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0 0 0 28px;
+}
+
+.experience-honor::before,
+.education-honor::before,
+.education-major::before {
+    font-size: inherit;
+    width: 28px;
+    margin-left: -28px;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    display: inline-block;
+}
+
+.education-major::before {
+    content: "\f19d";
+}
+
+.education-honor::before {
+    content: "\f091";
+}
+
+.language-english::before {
+    content: "\f086";
+}
+
+.experience-job::before {
+    content: "\f0b1";
+}
+
+.experience-honor-time,
+.experience-period {
+    float: right;
+}
+
+.experience-task::before {
+    font-size: inherit;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    display: inline-block;
+}
+
+.experience-task::before {
+    content: "\f013";
+    width: 28px;
+    margin-left: -28px;
+}
+
+.experience-honor::before {
+    content: "\f091";
+}
